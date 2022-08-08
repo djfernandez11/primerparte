@@ -1,0 +1,22 @@
+*{
+    margin: O;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.maquillaje{
+    transform: translate(30px, 30 px);
+}
+.general:hover {
+    transform: scale(1.1 , 1.1);
+}
+h1{
+    font-family: 'Edu TAS Beginner', cursive;
+    font-family: 'Oleo Script Swash Caps', cursive;
+}
