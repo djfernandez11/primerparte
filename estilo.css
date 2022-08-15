@@ -2,6 +2,7 @@
     margin: O;
     padding: 0;
     box-sizing: border-box;
+   
 
 }
 .formulario{
@@ -14,11 +15,51 @@
     transform: translate(30px, 30 px);
 }
 .general:hover {
-    transform: scale(1.2 , 1.1);
+    transform: scale(1.1 , 1.1);
 }
-h1{
-    font-family: 'Edu TAS Beginner', cursive;
-    font-family: 'Oleo Script Swash Caps', cursive;
-    background-color: black;
-    opacity: 0.7;
+.contenedorcamba{
+   
+    background-color: whitesmoke;
+}
+.seccion1{
+    font-size: 3rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+}
+.seccion2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.videocamba{
+    border-radius: 10px;
+    border: 5px solid black;
+    margin: 20px;
+}
+.seccion3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.5rem;
+    border-color: black;
+    border-style: groove;
+    margin:  20px;
+}
+.galeria img{
+    width: 90%;
+    height: 200px;
+    border: 5px solid black;
+}
+.col-lg-4{
+    padding: 25px ;
+}
+.galeria img:hover{
+    transform: scale(2.0,2.0);
+    border: 5px solid black;
+}
+.nos{
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 10px;
 }
