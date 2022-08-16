@@ -1,0 +1,62 @@
+*{
+    margin: O;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 97.5%;
+    padding-left: 2.5%;
+}
+.general:hover {
+    transform: scale(1.1 , 1.1);
+}
+.contenedorcamba{
+   
+    background-color: whitesmoke;
+    .nos{
+        text-align: center;
+        font-size: 1.5rem;
+        margin: 10px;
+    }
+    .seccion1{
+        font-size: 3rem;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 20px;
+    }
+    .seccion2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .seccion3{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 1.5rem;
+        border-color: black;
+        border-style: groove;
+        margin:  20px;
+        }
+    .galeria img{
+        width: 90%;
+        height: 200px;
+        border: 5px solid black;
+        
+        }  
+        .galeria img:hover{
+            transform: scale(2.0,2.0);
+            border: 5px solid black;
+        }
+        .col-lg-4{
+            padding: 25px ;
+        }
+        .general:hover {
+            transform: scale(1.1 , 1.1);
+        }
+        .videocamba{
+            border-radius: 10px;
+            border: 5px solid black;
+            margin: 20px;
+        }
+}
