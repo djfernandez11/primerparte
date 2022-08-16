@@ -2,8 +2,11 @@
     margin: O;
     padding: 0;
     box-sizing: border-box;
-   
-
+    
+}
+body{
+    width: 97.5%;
+    padding-left: 2.5%;
 }
 .formulario{
     display: flex;
@@ -38,6 +41,7 @@
     border-radius: 10px;
     border: 5px solid black;
     margin: 20px;
+    
 }
 .seccion3{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
