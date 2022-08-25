@@ -1,0 +1,37 @@
+﻿en el archivo index.html se agregaron los siguientes datos:
+
+
+<meta name="description" content="Tenemos el show que estás esperando para tu fiesta, para que tu fiesta sea inolvidable">
+    <meta name="keywords"  content="musica, bandas, show, carnaval, fiesta, evento, maquillaje, magia, mago,tanda">
+   
+<title>Shows para fiestas y eventos</title>
+
+
+en la pagina bandas.html (la misma se repite dentro de las diferentes secciones de bandas)
+ se agregaron los siguientes datos:
+
+
+  <meta name="description" content="las mejores bandas y cantantes en vivo, para animar tu fiesta y que sea inbreible">
+  <meta name="keywords"  content="musica, bandas, bandasenvivo, musicales, cantantes, solistas">
+<title>Bandas en vivo</title>
+
+
+en la pagina de maquillajes.html  (la misma se repite dentro de las diferentes secciones de maquillaje)
+ se agregaron los siguientes datos:
+    <meta name="description" content="stand de maquillaje y de glitter para que tu fiesta sea unica">
+    <meta name="keywords"  content="maquillaje, glitter, sombras, colodiro,colores, brillo ">
+<title>maquillajes</title>
+
+
+en la pagina de batucadas.hmtl  (la misma se repite dentro de las diferentes secciones de batucadas)
+ se agregaron los siguientes datos:
+<meta name="description" content="Tenemos el show que estás esperando para tu fiesta, para que tu fiesta sea inolvidable">
+    <meta name="keywords"  content="batucada, carnaval, showdecarnaval,comparsa,alegria,fiesta,colores, plumas">
+<title>Batucadas</title>
+
+
+en la pagina de mago.html (la misma se repite dentro de las diferentes secciones de magos)
+ se agregaron los siguientes datos:
+ <meta name="description" content="los mejores magos para sorprender a todos tus invitados ">
+    <meta name="keywords"  content="magia, magos, mago, maga, trucos, ilucion, ilucionismo, adivinanzas ">
+<title>Magia</title>
