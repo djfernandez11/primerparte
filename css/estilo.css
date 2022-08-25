@@ -2,155 +2,247 @@
   margin: O;
   padding: 0;
   box-sizing: border-box;
-  }
+}
 
 body {
   width: 97.5%;
-  padding-left: 2.5%; }
+  padding-left: 2.5%;
+  background: #000;
+  color: #fff;
+}
 
 .general:hover {
-  transform: scale(1.1, 1.1); }
+  transform: scale(1.1, 1.1);
+}
 
 .contenedorcamba {
-  background-color: #181818;
-  color: white; }
-  .contenedorcamba .nos {
-    text-align: center;
-    font-size: 1.5rem;
-    margin: 10px; }
-  .contenedorcamba .seccion1 {
-    font-size: 3rem;
-    font-family:'Quintessential', cursive;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin: 20px; }
-  .contenedorcamba .seccion2 {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  .contenedorcamba .seccion3 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 1.5rem;
-    margin: 40px; 
-    padding: 20px;
-    text-align: center;
-    text-decoration: solid;
-  }
-  .contenedorcamba .seccion3 h4{
-    font-size: 2rem;
-  }
-  .contenedorcamba .galeria img {
-    width: 90%;
-    height: 200px;
-    border: 5px solid black; }
-  .contenedorcamba .galeria img:hover {
-    transform: scale(2, 2);
-    border: 5px solid black; }
-  .contenedorcamba .col-lg-4 {
-    padding: 25px; }
-  .contenedorcamba .general:hover {
-    transform: scale(1.1, 1.1); }
-  .contenedorcamba .videocamba {
-    border-radius: 10px;
-    border: 5px solid black;
-    margin: 20px; }
+  background-color: black;
+}
+.contenedorcamba .nos {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 10px;
+}
+.contenedorcamba .seccion1 {
+  font-size: 3rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 20px;
+}
+.contenedorcamba .seccion2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedorcamba .seccion3 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.5rem;
+  border-color: black;
+  border-style: groove;
+  margin: 20px;
+}
+.contenedorcamba .galeria img {
+  width: 90%;
+  height: 200px;
+  border: 5px solid black;
+}
+.contenedorcamba .galeria img:hover {
+  transform: scale(2, 2);
+  border: 5px solid black;
+}
+.contenedorcamba .col-lg-4 {
+  padding: 25px;
+}
+.contenedorcamba .general:hover {
+  transform: scale(1.1, 1.1);
+}
+.contenedorcamba .videocamba {
+  border-radius: 10px;
+  border: 5px solid black;
+  margin: 20px;
+}
 
+.formulario {
+  background: #181818;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  padding: 0 20px;
+}
+.formulario .tituloform {
+  font-size: 3rem;
+  padding: 20px;
+  text-align: center;
+}
+.formulario .contenedorambos {
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 30px 0 rgba(255, 255, 255, 0.3);
+}
+.formulario .form1 {
+  background-color: #222222;
+}
+.formulario .form1 form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.formulario .form1 form .datosevento {
+  grid-column: 1/3;
+}
+.formulario .form1 form p {
+  margin: 0;
+  padding: 2rem;
+}
+.formulario .form1 form button,
+.formulario .form1 form input,
+.formulario .form1 form textarea {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  background: none;
+  outline: none;
+  border-bottom: 2px solid red;
+  color: white;
+}
+.formulario .form1 form button {
+  background-color: red;
+  width: 100%;
+}
+.formulario .form1 form button:hover,
+.formulario .form1 form button:focus {
+  background-color: red;
+  color: black;
+  transition: background-color 1 s ease-out;
+  border: none;
+}
+.formulario .form1 form h3 {
+  text-align: center;
+}
+.formulario .form1 .form2 {
+  background-color: #000;
+}
+.formulario .form1 .form2 h4,
+.formulario .form1 .form2 ul,
+.formulario .form1 .form2 p {
+  text-align: center;
+}
+.formulario .form1 .form2 ul {
+  list-style: none;
+  padding: 0;
+}
+.formulario .form1 .form2 ul li {
+  padding: 10px;
+  text-decoration: none;
+}
+
+.general {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}
+.general .card {
+  color: white;
+  background-color: red;
+  width: 75%;
+}
+.general .card .card-title {
+  text-align: center;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 1.6rem;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.contenedor .caja {
+  width: 100%;
+  height: 300px;
+  border: 4px solid white;
+}
+.contenedor .caja img:hover {
+  transform: scale(1.1, 1.1);
+}
+.contenedor .caja h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+.contenedor .caja p {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.contenedor .caja span {
+  color: red;
+  margin-left: 5px;
+}
+.contenedor .caja .caja11 {
+  display: flex;
+  justify-content: space-around;
+}
+.contenedor .caja .caja11 img {
+  width: 230px;
+  border-radius: 4px solid white;
+}
+.tituloseccion{
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image:url(/shows/magiaa.jpg), linear-gradient(to right, rgb(0 0 0 /.5), rgb(0 0 0 /.5));
+  background-size: cover;
+  background-position: center;
+}
+.titulobatucada{
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image:url(/shows/mascara.webp), linear-gradient(to right, rgb(0 0 0 /.5), rgb(0 0 0 /.5));
+  background-size: cover;
+  background-position: center;
+}
+.titulobandas{
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image:url(/shows/bandasen.jpg), linear-gradient(to right, rgb(0 0 0 /.5), rgb(0 0 0 /.5));
+  background-size: cover;
+  background-position: center;
+}
+.titulomaquillaje{
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image:url(/shows/glitter.jpg), linear-gradient(to right, rgb(0 0 0 /.5), rgb(0 0 0 /.5));
+  background-size: cover;
+  background-position: center;
+}
+
+@media (min-width: 700px) {
   .formulario{
-    background: #181818 ;
-    color: white;
-    font-family: 'Quicksand', sans-serif;
-    padding: 0 20px;
-  }
-  .tituloform{
-    font-size: 3rem;
-    padding: 20px;
-    text-align: center;
-
+    padding: o 4rem;
   }
   .contenedorambos{
-    padding: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 0 30px 0 rgb(255,255,255, .3);
-  }
-  .form1{
-    background-color: #222222;
-  }
-  .form2{
-    background-color: #000;
-  }
-  .form1 form{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns:  2fr 1fr;
   }
-  .form1 form .datosevento{
-    grid-column: 1 / 3;
-  }
-  .form1 form p{
-    margin: 0;
-    padding: 2rem;
-  }
-  .form1 form button,
-  .form1 form input,
-  .form1 form textarea{
-    width: 100%;
-    padding: 1rem;
-    border: none;
-    background: none;
-    outline: none;
-    border-bottom: 2px solid red;
-    color: white;
-  }
-  .form1 form button{
-    background-color: red;
-    width: 100%;
-    }
-  .form1 form button:hover,
-  .form1 form button:focus{
-    background-color: red;
-    color: black;
-    transition: background-color 1 s ease-out;
-    border: none;
-  }
-  .form2 h4,
   .form2 ul,
   .form2 p{
+    padding: 1em;
+    text-align: left;
+  }
+  .form2 h4{
     text-align: center;
+    padding: 2em;
   }
-  .form2 ul{
-    list-style: none;
-    padding: 0;
-  }
-  .form2 ul li{
-    padding: 10px;
-  }
-  .form1 h3{
-    text-align: center;
-  }
-  .card {
-    color: white;
-    background-color: #000;
-  }
-  .card-title{
-    text-align: center;
-  }
-  @media (min-width: 700px) {
-    .formulario{
-      padding: o 4rem;
-    }
-    .contenedorambos{
-      display: grid;
-      grid-template-columns:  2fr 1fr;
-    }
-    .form2 ul,
-    .form2 p{
-      padding: 1em;
-      text-align: left;
-    }
-    .form2 h4{
-      text-align: center;
-      padding: 2em;
-    }
-  }
+}/*# sourceMappingURL=estilo.css.map 
