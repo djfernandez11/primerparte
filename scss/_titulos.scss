@@ -1,0 +1,25 @@
+.titulomain{
+height: 300px;
+display: flex;
+justify-content: center;
+align-items: center;
+background-size: cover;
+background-position: center;
+    .titulomago{
+        @extend .titulomain;
+        background-image:url(/shows/magiaa.jpg), linear-gradient(to right, rgb(0 0 0 /.5), rgb(0 0 0 /.5));
+    }
+    .titulobatucada{
+        @extend .titulomain;
+        background-image:url(/shows/mascara.webp), linear-gradient(to right, rgb(0 0 0 /.5), rgb(0 0 0 /.5));
+    }
+    .titulobandas{
+        @extend .titulomain;
+        background-image:url(/shows/instrumentos.jpg), linear-gradient(to right, rgb(0 0 0 /.5), rgb(0 0 0 /.5));
+    }
+    .titulomaquillaje{
+        @extend .titulomain;
+        background-image:url(/shows/glitter.jpg), linear-gradient(to right, rgb(0 0 0 /.5), rgb(0 0 0 /.5));
+    }
+}
+

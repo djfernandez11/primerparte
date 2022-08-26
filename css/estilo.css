@@ -11,57 +11,26 @@ body {
   color: #fff;
 }
 
-.general:hover {
-  transform: scale(1.1, 1.1);
-}
-
-.contenedorcamba {
-  background-color: black;
-}
-.contenedorcamba .nos {
-  text-align: center;
-  font-size: 1.5rem;
-  margin: 10px;
-}
-.contenedorcamba .seccion1 {
-  font-size: 3rem;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin: 20px;
-}
-.contenedorcamba .seccion2 {
+.titulomain, .titulomain .titulomaquillaje, .titulomain .titulobandas, .titulomain .titulobatucada, .titulomain .titulomago {
+  height: 300px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-size: cover;
+  background-position: center;
 }
-.contenedorcamba .seccion3 {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-size: 1.5rem;
-  border-color: black;
-  border-style: groove;
-  margin: 20px;
+.titulomain .titulomago {
+  background-image: url(/shows/magiaa.jpg), linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
-.contenedorcamba .galeria img {
-  width: 90%;
-  height: 200px;
-  border: 5px solid black;
+.titulomain .titulobatucada {
+  background-image: url(/shows/mascara.webp), linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
-.contenedorcamba .galeria img:hover {
-  transform: scale(2, 2);
-  border: 5px solid black;
+.titulomain .titulobandas {
+  background-image: url(/shows/instrumentos.jpg), linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
-.contenedorcamba .col-lg-4 {
-  padding: 25px;
-}
-.contenedorcamba .general:hover {
-  transform: scale(1.1, 1.1);
-}
-.contenedorcamba .videocamba {
-  border-radius: 10px;
-  border: 5px solid black;
-  margin: 20px;
+.titulomain .titulomaquillaje {
+  background-image: url(/shows/glitter.jpg), linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
 }
 
 .formulario {
@@ -120,21 +89,73 @@ body {
 .formulario .form1 form h3 {
   text-align: center;
 }
-.formulario .form1 .form2 {
+.formulario .form2 {
   background-color: #000;
 }
-.formulario .form1 .form2 h4,
-.formulario .form1 .form2 ul,
-.formulario .form1 .form2 p {
+.formulario .form2 h4,
+.formulario .form2 ul,
+.formulario .form2 p {
   text-align: center;
 }
-.formulario .form1 .form2 ul {
+.formulario .form2 ul {
   list-style: none;
   padding: 0;
 }
-.formulario .form1 .form2 ul li {
+.formulario .form2 ul li {
   padding: 10px;
-  text-decoration: none;
+}
+
+.general:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.contenedorcamba {
+  background-color: #000;
+}
+.contenedorcamba .nos {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 10px;
+}
+.contenedorcamba .seccion1 {
+  font-size: 3rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 20px;
+}
+.contenedorcamba .seccion2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenedorcamba .seccion3 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.5rem;
+  border-color: black;
+  border-style: groove;
+  margin: 20px;
+}
+.contenedorcamba .galeria img {
+  width: 90%;
+  height: 200px;
+  border: 5px solid black;
+}
+.contenedorcamba .galeria img:hover {
+  transform: scale(2, 2);
+  border: 5px solid black;
+}
+.contenedorcamba .col-lg-4 {
+  padding: 25px;
+}
+.contenedorcamba .general:hover {
+  transform: scale(1.1, 1.1);
+}
+.contenedorcamba .videocamba {
+  border-radius: 10px;
+  border: 5px solid black;
+  margin: 20px;
 }
 
 .general {
@@ -191,58 +212,22 @@ body {
   width: 230px;
   border-radius: 4px solid white;
 }
-.tituloseccion{
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image:url(/shows/magiaa.jpg), linear-gradient(to right, rgb(0 0 0 /.5), rgb(0 0 0 /.5));
-  background-size: cover;
-  background-position: center;
-}
-.titulobatucada{
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image:url(/shows/mascara.webp), linear-gradient(to right, rgb(0 0 0 /.5), rgb(0 0 0 /.5));
-  background-size: cover;
-  background-position: center;
-}
-.titulobandas{
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image:url(/shows/bandasen.jpg), linear-gradient(to right, rgb(0 0 0 /.5), rgb(0 0 0 /.5));
-  background-size: cover;
-  background-position: center;
-}
-.titulomaquillaje{
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image:url(/shows/glitter.jpg), linear-gradient(to right, rgb(0 0 0 /.5), rgb(0 0 0 /.5));
-  background-size: cover;
-  background-position: center;
-}
 
 @media (min-width: 700px) {
-  .formulario{
+  .formulario {
     padding: o 4rem;
   }
-  .contenedorambos{
+  .contenedorambos {
     display: grid;
-    grid-template-columns:  2fr 1fr;
+    grid-template-columns: 2fr 1fr;
   }
   .form2 ul,
-  .form2 p{
+.form2 p {
     padding: 1em;
     text-align: left;
   }
-  .form2 h4{
+  .form2 h4 {
     text-align: center;
     padding: 2em;
   }
-}/*# sourceMappingURL=estilo.css.map 
+}/*# sourceMappingURL=estilo.css.map */
