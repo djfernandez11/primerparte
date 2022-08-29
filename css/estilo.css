@@ -1,7 +1,9 @@
-* {
-  margin: O;
+*{
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 
 body {
@@ -9,28 +11,82 @@ body {
   padding-left: 2.5%;
   background: #000;
   color: #fff;
+  font-family: 'Roboto Condensed', sans-serif;
 }
-
-.titulomain, .titulomain .titulomaquillaje, .titulomain .titulobandas, .titulomain .titulobatucada, .titulomain .titulomago {
-  height: 300px;
+header{
+  width: 100%;
+  height: 100vh ;
+  background-image: url(/shows/bola2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+nav{
+  height: 100px;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  background-size: cover;
-  background-position: center;
 }
-.titulomain .titulomago {
-  background-image: url(/shows/magiaa.jpg), linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+.logo{
+  width: 140px;
+  margin-left:  20px;
 }
-.titulomain .titulobatucada {
-  background-image: url(/shows/mascara.webp), linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+.bar-btn{
+  font-size: 25px;
+  color: #fff;
+  margin-right: 20px;
+  cursor: pointer;
 }
-.titulomain .titulobandas {
-  background-image: url(/shows/instrumentos.jpg), linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+.nav-menu{
+  position: fixed;
+  width: 100%;
+  height: 0vh;
+  top: 100px;
+  background-color: rgba(0, 0, 0, .95);
+  text-align: center;
+  transition: all .5s;
+  
 }
-.titulomain .titulomaquillaje {
-  background-image: url(/shows/glitter.jpg), linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+.nav-menu li{
+  display: none;
+  line-height: 30px;
+  margin: 50px;
+  transition: all .5s;
+
+} 
+.nav-menu li a{
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.nav-menu li a.active, .nav-menu li a:hover {
+  color: red;
+  transition: .3s;
+}
+#check{
+  display: none;
+}
+#check:checked ~ .nav-menu {
+  height: 100vh;
+}
+#check:checked ~ .nav-menu li {
+  display:block;
+}
+.tituloheader {
+  padding:  0 30px;
+  margin-top: 100px;
+  text-align: center;
+  color: #fff;
+}
+.tituloheader h1{
+  font-size: 50px;
+  margin-bottom:  30px;
+}
+.tituloheader h2{
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .formulario {
@@ -85,6 +141,9 @@ body {
   color: black;
   transition: background-color 1 s ease-out;
   border: none;
+}
+.formulario .contenedorform .tituloform span{
+  color: red;
 }
 .formulario .form1 form h3 {
   text-align: center;
@@ -143,7 +202,7 @@ body {
   border: 5px solid black;
 }
 .contenedorcamba .galeria img:hover {
-  transform: scale(2, 2);
+  transform: scale(1, 1);
   border: 5px solid black;
 }
 .contenedorcamba .col-lg-4 {
@@ -212,6 +271,28 @@ body {
   width: 230px;
   border-radius: 4px solid white;
 }
+.nosotros{
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 50px;
+
+}
+.nosotros img{
+  width: 300px;
+  margin-top: 30px;
+  border: #fff solid 5px;
+}
+.nosotros .text2{
+  grid-column: 1/3;
+}
+.nosotros .text3{
+  grid-column: 1/3;
+}
+.nosotros h2{
+  text-align: center;
+}
 
 @media (min-width: 700px) {
   .formulario {
@@ -229,5 +310,49 @@ body {
   .form2 h4 {
     text-align: center;
     padding: 2em;
+  }
+  @media screen and (min-width: 768px) {
+    .logo{
+        margin-left: 50px;
+    }
+    nav{
+        height: 100px;
+    }
+    .bar-btn{
+        display: none;
+    }
+    .nav-menu{
+        position: relative;
+        height: 100px;
+        top: 0;
+        background: none;
+        transition: none;
+        text-align: right;
+        margin-right: 50px;
+    }
+    .nav-menu li{
+        display: inline-block;
+        line-height: 100px;
+        margin: 0 20px;
+        transition: none;
+    }
+    .nav-menu li a{
+        font-size: 15px;
+    }
+    .tituloheader h1{
+        font-size: 100px;
+        margin-bottom: 30px;
+    }
+    .tituloheader h2{
+        font-size: 20px;
+    }
+  }
+  .item{
+    transition: .5s ease-in-out;
+    cursor: pointer;
+  }
+  .item:hover {
+    filter: brightness(80%);
+  
   }
 }/*# sourceMappingURL=estilo.css.map */
