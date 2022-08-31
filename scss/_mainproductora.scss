@@ -1,0 +1,34 @@
+.contenedorcamba {
+    background-color: #000;
+    .nos {
+        text-align: center;
+        font-size: 1.5rem;
+        margin: 10px;
+      }
+    .seccion1 {
+        font-size: 3rem;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 20px;
+      }
+    .seccion2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }  
+    .seccion3 {
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        font-size: 1.5rem;
+        border-color: black;
+        border-style: groove;
+        margin: 20px;
+        .galeria img {
+            width: 90%;
+            height: 200px;
+            border: 5px solid black;
+          }
+    }  
+
+  }

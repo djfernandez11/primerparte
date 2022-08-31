@@ -1,4 +1,4 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -11,161 +11,130 @@ body {
   padding-left: 2.5%;
   background: #000;
   color: #fff;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
 }
-header{
-  width: 100%;
-  height: 100vh ;
-  background-image: url(/shows/bola2.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-nav{
+
+nav {
   height: 100px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.logo{
+
+.logo {
   width: 140px;
-  margin-left:  20px;
+  margin-left: 20px;
 }
-.bar-btn{
+
+.bar-btn {
   font-size: 25px;
   color: #fff;
   margin-right: 20px;
   cursor: pointer;
 }
-.nav-menu{
+
+.nav-menu {
   position: fixed;
-  width: 100%;
+  width: 100vw;
   height: 0vh;
   top: 100px;
-  background-color: rgba(0, 0, 0, .95);
+  background-color: rgba(0, 0, 0, 0.95);
   text-align: center;
-  transition: all .5s;
-  
+  transition: all 0.5s;
 }
-.nav-menu li{
+
+.nav-menu li {
   display: none;
   line-height: 30px;
   margin: 50px;
-  transition: all .5s;
+  transition: all 0.5s;
+}
 
-} 
-.nav-menu li a{
+.nav-menu li a {
   color: #fff;
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 600;
 }
+
 .nav-menu li a.active, .nav-menu li a:hover {
   color: red;
-  transition: .3s;
+  transition: 0.3s;
 }
-#check{
+
+#check {
   display: none;
 }
+
 #check:checked ~ .nav-menu {
   height: 100vh;
 }
+
 #check:checked ~ .nav-menu li {
-  display:block;
+  display: block;
 }
-.tituloheader {
-  padding:  0 30px;
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/shows/bola2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+header .tituloheader {
+  padding: 0 30px;
   margin-top: 100px;
   text-align: center;
   color: #fff;
 }
-.tituloheader h1{
+header .tituloheader h1 {
   font-size: 50px;
-  margin-bottom:  30px;
+  margin-bottom: 30px;
 }
-.tituloheader h2{
+header .tituloheader h2 {
   font-size: 16px;
   font-weight: 600;
 }
 
-.formulario {
-  background: #181818;
-  color: white;
-  font-family: "Quicksand", sans-serif;
-  padding: 0 20px;
-}
-.formulario .tituloform {
-  font-size: 3rem;
-  padding: 20px;
-  text-align: center;
-}
-.formulario .contenedorambos {
-  padding: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 0 30px 0 rgba(255, 255, 255, 0.3);
-}
-.formulario .form1 {
-  background-color: #222222;
-}
-.formulario .form1 form {
+.contenedor {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto;
+  gap: 1.6rem;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
-.formulario .form1 form .datosevento {
-  grid-column: 1/3;
-}
-.formulario .form1 form p {
-  margin: 0;
-  padding: 2rem;
-}
-.formulario .form1 form button,
-.formulario .form1 form input,
-.formulario .form1 form textarea {
+.contenedor .caja {
   width: 100%;
-  padding: 1rem;
-  border: none;
-  background: none;
-  outline: none;
-  border-bottom: 2px solid red;
-  color: white;
+  height: 300px;
+  border: 4px solid white;
 }
-.formulario .form1 form button {
-  background-color: red;
-  width: 100%;
+.contenedor h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
 }
-.formulario .form1 form button:hover,
-.formulario .form1 form button:focus {
-  background-color: red;
-  color: black;
-  transition: background-color 1 s ease-out;
-  border: none;
+.contenedor p {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
-.formulario .contenedorform .tituloform span{
+.contenedor span {
   color: red;
-}
-.formulario .form1 form h3 {
-  text-align: center;
-}
-.formulario .form2 {
-  background-color: #000;
-}
-.formulario .form2 h4,
-.formulario .form2 ul,
-.formulario .form2 p {
-  text-align: center;
-}
-.formulario .form2 ul {
-  list-style: none;
-  padding: 0;
-}
-.formulario .form2 ul li {
-  padding: 10px;
+  margin-left: 5px;
 }
 
-.general:hover {
-  transform: scale(1.1, 1.1);
+.border-1 {
+  border: solid 4px white;
+  border-radius: 5px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.border-1 img {
+  width: 250px;
 }
 
 .contenedorcamba {
@@ -196,25 +165,10 @@ nav{
   border-style: groove;
   margin: 20px;
 }
-.contenedorcamba .galeria img {
+.contenedorcamba .seccion3 .galeria img {
   width: 90%;
   height: 200px;
   border: 5px solid black;
-}
-.contenedorcamba .galeria img:hover {
-  transform: scale(1, 1);
-  border: 5px solid black;
-}
-.contenedorcamba .col-lg-4 {
-  padding: 25px;
-}
-.contenedorcamba .general:hover {
-  transform: scale(1.1, 1.1);
-}
-.contenedorcamba .videocamba {
-  border-radius: 10px;
-  border: 5px solid black;
-  margin: 20px;
 }
 
 .general {
@@ -232,127 +186,145 @@ nav{
   text-align: center;
 }
 
-.contenedor {
-  display: grid;
-  grid-template-columns: auto;
-  gap: 1.6rem;
-  margin-top: 50px;
-  margin-bottom: 50px;
+.formulario {
+  background: #181818;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  padding: 0 20px;
 }
-.contenedor .caja {
-  width: 100%;
-  height: 300px;
-  border: 4px solid white;
+.formulario .tituloform {
+  font-size: 3rem;
+  padding: 20px;
+  text-align: center;
 }
-.contenedor .caja img:hover {
-  transform: scale(1.1, 1.1);
-}
-.contenedor .caja h2 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 10px;
-}
-.contenedor .caja p {
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-.contenedor .caja span {
+.formulario .tituloform span {
   color: red;
-  margin-left: 5px;
 }
-.contenedor .caja .caja11 {
-  display: flex;
-  justify-content: space-around;
+.formulario .contenedorambos {
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 30px 0 rgba(255, 255, 255, 0.3);
 }
-.contenedor .caja .caja11 img {
-  width: 230px;
-  border-radius: 4px solid white;
+.formulario .form1 {
+  background-color: #222222;
 }
-.nosotros{
+.formulario .form1 form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.formulario .form1 form h3 {
+  text-align: center;
+}
+.formulario .form1 form .datosevento {
+  grid-column: 1/3;
+}
+.formulario .form1 form p {
+  margin: 0;
+  padding: 2rem;
+}
+.formulario .form1 form textarea, .formulario .form1 form button, .formulario .form1 form input {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  background: none;
+  outline: none;
+  border-bottom: 2px solid red;
+  color: white;
+}
+.formulario .form1 form button {
+  background-color: red;
+  width: 100%;
+}
+.formulario .form1 form button :focus, .formulario .form1 form button :hover {
+  background-color: red;
+  color: black;
+  transition: background-color 1 s ease-out;
+  border: none;
+}
+.formulario .form2 {
+  background-color: #000;
+}
+.formulario .form2 h4, .formulario .form2 ul, .formulario .form2 p {
+  text-align: center;
+}
+.formulario .form2 ul {
+  list-style: none;
+  padding: 0;
+}
+.formulario .form2 ul li {
+  padding: 10px;
+}
+
+.nosotros {
   margin-top: 100px;
   margin-bottom: 100px;
   display: grid;
   grid-template-columns: 1fr auto;
   gap: 50px;
-
 }
-.nosotros img{
+.nosotros img {
   width: 300px;
   margin-top: 30px;
   border: #fff solid 5px;
 }
-.nosotros .text2{
+.nosotros .text2 {
   grid-column: 1/3;
 }
-.nosotros .text3{
+.nosotros .text3 {
   grid-column: 1/3;
 }
-.nosotros h2{
+.nosotros h2 {
   text-align: center;
 }
 
-@media (min-width: 700px) {
-  .formulario {
-    padding: o 4rem;
+@media screen and (min-width: 640px) {
+  .logo {
+    margin-left: 50px;
   }
-  .contenedorambos {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+  nav {
+    height: 100px;
   }
-  .form2 ul,
-.form2 p {
-    padding: 1em;
-    text-align: left;
+  .bar-btn {
+    display: none;
   }
-  .form2 h4 {
-    text-align: center;
-    padding: 2em;
+  .nav-menu {
+    position: relative;
+    height: 100px;
+    top: 0;
+    background: none;
+    transition: none;
+    text-align: right;
+    margin-right: 50px;
   }
-  @media screen and (min-width: 768px) {
-    .logo{
-        margin-left: 50px;
-    }
-    nav{
-        height: 100px;
-    }
-    .bar-btn{
-        display: none;
-    }
-    .nav-menu{
-        position: relative;
-        height: 100px;
-        top: 0;
-        background: none;
-        transition: none;
-        text-align: right;
-        margin-right: 50px;
-    }
-    .nav-menu li{
-        display: inline-block;
-        line-height: 100px;
-        margin: 0 20px;
-        transition: none;
-    }
-    .nav-menu li a{
-        font-size: 15px;
-    }
-    .tituloheader h1{
-        font-size: 100px;
-        margin-bottom: 30px;
-    }
-    .tituloheader h2{
-        font-size: 20px;
-    }
+  .nav-menu li {
+    display: inline-block;
+    line-height: 100px;
+    margin: 0 20px;
+    transition: none;
   }
-  .item{
-    transition: .5s ease-in-out;
-    cursor: pointer;
+  .nav-menu li a {
+    font-size: 15px;
   }
-  .item:hover {
-    filter: brightness(80%);
-  
+  .tituloheader h1 {
+    font-size: 100px;
+    margin-bottom: 30px;
+  }
+  .tituloheader h2 {
+    font-size: 20px;
+  }
+}
+.item {
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.item:hover {
+  filter: brightness(80%);
+}
+
+@media (max-width: 415px) {
+  .formulario .form1 .form p {
+    padding: 0rem;
   }
 }/*# sourceMappingURL=estilo.css.map */
