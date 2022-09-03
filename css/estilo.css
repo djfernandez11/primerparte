@@ -75,7 +75,7 @@ nav {
   display: block;
 }
 
-header {
+.headerindex {
   width: 100%;
   height: 100vh;
   background-image: url(/shows/bola2.jpg);
@@ -121,6 +121,7 @@ header .tituloheader h2 {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  text-align: justify;
 }
 .contenedor span {
   color: red;
@@ -164,11 +165,17 @@ header .tituloheader h2 {
   border-color: black;
   border-style: groove;
   margin: 20px;
+  text-align: justify;
 }
 .contenedorcamba .seccion3 .galeria img {
   width: 90%;
   height: 200px;
   border: 5px solid black;
+}
+
+.galeriacontainer h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .general {

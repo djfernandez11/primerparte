@@ -1,0 +1,21 @@
+@mixin header ($imagen) {
+    width: 100%;
+    height: 100vh;
+    background-image: ($imagen);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+} 
+.headerindex{
+    @include header(url(/shows/bola2.jpg))
+}
+.headerbandas{
+    @include header(url(/shows/guitarrafuego1.jpg))
+}
+.headerbatucada{
+    @include header( url(/shows/mascara.webp))
+}
+.headermaquillaje {
+    @include header(url(/shows/glitter1.jpg))
+}
