@@ -6,6 +6,9 @@
   background-position: center;
   background-size: cover;
 }
+.headerindex .logo {
+  width: 50px;
+}
 
 .headerbandas {
   width: 100%;
@@ -15,14 +18,20 @@
   background-position: center;
   background-size: cover;
 }
+.headerbandas .logo {
+  width: 50px;
+}
 
 .headerbatucada {
   width: 100%;
   height: 100vh;
-  background-image: url(/shows/mascaras3.jpg);
+  background-image: url(/shows/mascara.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.headerbatucada .logo {
+  width: 50px;
 }
 
 .headermaquillaje {
@@ -32,4 +41,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+.headermaquillaje .logo {
+  width: 50px;
 }/*# sourceMappingURL=mixsin.css.map */
