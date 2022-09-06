@@ -14,11 +14,20 @@
     @include header(url(/shows/bola2.jpg))
 }
 .headerbandas{
-    @include header(url(/shows/guitarrafuego1.jpg))
+    @include header(url(/shows/notas.jpg))
 }
 .headerbatucada{
-    @include header( url(/shows/mascara.webp))
+    @include header( url(/shows/mascaras3.jpg))
 }
 .headermaquillaje {
-    @include header(url(/shows/glitter1.jpg))
+    @include header(url(/shows/galaxia.jpg))
+}
+.headermagia{
+    @include header(url(/shows/magia2.jpg))
+}
+.headernosotros {
+    @include header(url(/shows/nosotros1.jpg))
+}
+.headercontacto{
+    @include header(url(/shows/contacto.jpg))
 }
