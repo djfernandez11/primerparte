@@ -23,8 +23,11 @@ nav {
 }
 
 .logo {
-  width: 140px;
+  width: 180px;
   margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .bar-btn {
@@ -75,7 +78,7 @@ nav {
   display: block;
 }
 
-.headerindex {
+header {
   width: 100%;
   height: 100vh;
   background-image: url(/shows/bola2.jpg);
@@ -84,17 +87,19 @@ nav {
   background-size: cover;
 }
 header .tituloheader {
+  font-family: "Combo", cursive;
   padding: 0 30px;
   margin-top: 100px;
   text-align: center;
   color: #fff;
 }
 header .tituloheader h1 {
-  font-size: 50px;
+  font-size: 75px;
   margin-bottom: 30px;
+  opacity: 0.7;
 }
 header .tituloheader h2 {
-  font-size: 16px;
+  font-size: 25px;
   font-weight: 600;
 }
 
@@ -121,7 +126,6 @@ header .tituloheader h2 {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  text-align: justify;
 }
 .contenedor span {
   color: red;
@@ -158,6 +162,7 @@ header .tituloheader h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 100px;
 }
 .contenedorcamba .seccion3 {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -165,7 +170,8 @@ header .tituloheader h2 {
   border-color: black;
   border-style: groove;
   margin: 20px;
-  text-align: justify;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 .contenedorcamba .seccion3 .galeria img {
   width: 90%;
@@ -173,6 +179,9 @@ header .tituloheader h2 {
   border: 5px solid black;
 }
 
+.galeriacontainer {
+  margin-bottom: 50px;
+}
 .galeriacontainer h1 {
   margin-top: 20px;
   margin-bottom: 20px;
